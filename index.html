@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>NoteInfo - Tecnologia</title>
+    <style>
+        /* Reset básico */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212; 
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        /* Container principal */
+        .card-container {
+            width: 100%;
+            max-width: 400px;
+            padding: 40px 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Estilo da Foto / Logo */
+        .logo-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 3px solid #D4AF37; 
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.3);
+        }
+
+        /* Textos */
+        h1 {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #eeeeee;
+        }
+
+        h2 {
+            font-size: 14px;
+            font-weight: 400;
+            color: #D4AF37; 
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Botões */
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 16px;
+            margin-bottom: 15px;
+            background-color: #1e1e1e; 
+            color: #fff;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 500;
+            font-size: 16px;
+            border: 1px solid #333;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        .btn:hover, .btn:active {
+            background-color: #D4AF37;
+            color: #000;
+            border-color: #D4AF37;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+        }
+
+        /* ALERTA PERSONALIZADO (NOVO) */
+        #custom-alert {
+            visibility: hidden; /* Escondido por padrão */
+            min-width: 250px;
+            background-color: #D4AF37; /* Fundo Dourado */
+            color: #000; /* Letra preta */
+            text-align: center;
+            border-radius: 50px;
+            padding: 16px;
+            position: fixed;
+            z-index: 1000;
+            bottom: 30px; /* Aparece embaixo na tela */
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            font-weight: bold;
+            opacity: 0;
+            transition: opacity 0.5s, bottom 0.5s;
+        }
+
+        /* Quando o alerta ativa */
+        #custom-alert.show {
+            visibility: visible;
+            opacity: 1;
+            bottom: 50px; /* Sobe um pouquinho */
+        }
+
+        /* Rodapé */
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #666;
+            border-top: 1px solid #333;
+            width: 100%;
+            padding-top: 20px;
+        }
+        
+        .footer p { margin: 5px 0; }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        
+        <img src="C&B logo.jpg" alt="C&B Logo" class="logo-img">
+
+        <h1>C & B</h1>
+        <h2>ADVOCACIA</h2>
+
+        <a href="https://wa.me/5511984448111" class="btn" target="_blank">
+            WhatsApp
+        </a>
+	
+</body>
+</html>
